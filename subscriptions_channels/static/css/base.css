@@ -1,0 +1,11 @@
+aside {
+    float: left;
+    background-color: rgb(30, 70, 145);
+    width: 30%;
+    height: 650px;
+    padding: 2.5%;
+}
+
+aside ul li {
+    color: black;
+}

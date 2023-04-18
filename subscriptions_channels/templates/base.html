@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>
+		{% block title %}
+			Page title
+		{% endblock %}
+    </title>
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<aside>
+		<h3>Микология</h3>
+	<ul>
+		<a href="{% url 'index' %}"><li>Общая характеристика грибов</li></a>
+        <a href="{% url 'morph' %}"><li>Морфология грибов</li></a>
+		<a href="{% url 'paid' %}"><li>Платный контент</li></a>
+
+    </ul>
+	</aside>
+	<main>
+        {% block content %}
+		    Page content
+	    {% endblock %}
+    </main>
+</body>
+</html>
