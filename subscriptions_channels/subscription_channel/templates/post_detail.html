@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}
+	Платный контент
+{% endblock %}
+{% block content %}
+    <div>
+	    {{ post.content_html|safe}}
+    </div>
+{% endblock %}
